@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>BlackJack Game</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+	<div>
+
+		<div id="start">
+			<button id="start-btn" class="btn" type="button" name="button">
+				Start Playing
+			</button>
+			<div>
+				<span id="player-message"></span>
+			</div>
+			<div id="start-instructions">
+				Press to start playing
+			</div>
+		</div>
+	</div>
+
+	<div id="table">
+
+		<div id="dealer-label">
+			<span class="label">Dealer:</span>
+			<span id="dealer-value"></span>
+		</div>
+		<div id="dealer-table">
+
+		</div>
+
+		<div id="player-label">
+			<span class="label">Player:</span>
+			<span id="player-value"></span>
+		</div>
+		<div id="player-table">
+
+		</div>
+
+	</div>
+
+	<div id="action-board">
+		<div class="action-playing">
+			<button id="hit-btn" type="button" onclick="playerDecision('hit')" disabled class="btn">Hit</button>
+			<button id="stand-btn" type="button" onclick="playerDecision('stand')" disabled class="btn">Stand</button>
+		</div>
+		<div class="action-deal">
+			<button id="deal-btn" type="button" onclick="playerDecision('dealAgain')" class="btn">Deal</button>
+		</div>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  	crossorigin="anonymous"></script>
+
+
+	<!-- JS Own -->
+	<script src="js/app.js"></script>
+
+</body>
+</html>

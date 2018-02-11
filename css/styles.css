@@ -1,0 +1,171 @@
+
+body {
+    padding: 10px;
+    background-color: #07d159;
+    color: white;
+    font-size: 1.3em;
+}
+
+#table {
+    padding: 0 20% 15px 20%;
+}
+
+#start-instructions {
+    text-align: center;
+    color: black;
+    font-size: 0.7em;
+    font-weight: lighter;
+}
+
+.btn {
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 250px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 5px auto;
+    height: 40px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+#start-btn {
+    display: block;
+    color: #fff;
+    height: 40px;
+    width: 350px;
+}
+
+#action-board {
+    width: 45%;
+    margin: 0 auto;
+}
+
+#hit-btn, #stand-btn {
+    display: inline-block;
+    color: #fff;
+    height: 40px;
+    width: 48%;
+}
+
+#stand-btn {
+    float: right;
+}
+
+#deal-btn {
+    display: none;
+    color: #fff;
+    height: 40px;
+    width: 60%;
+    max-width: 350px;
+}
+
+.label {
+    letter-spacing: 2.5px;
+}
+
+.redLabel {
+    color: red;
+}
+
+.card {
+    height: 160px;
+    width: 120px;
+    padding: 10px;
+    border-radius: 14px;
+    background-color: white;
+    position: absolute;
+    left: 40%;
+    display: inline-block;
+    box-shadow: -1px 1px 4px -1px #000;
+}
+
+.top-card {
+     font-size: 30px;
+     line-height: 20px;
+     left: 2px;
+     height: 25%;
+     top: 2px;
+   }
+
+.content-card {
+     text-align: center;
+     font-size: 70px;
+     height: 50%;
+}
+
+.bottom-card {
+     font-size: 30px;
+     line-height: 20px;
+     right: 2px;
+     bottom: 2px;
+     height: 25%;
+     transform: rotate(-180deg);
+     -webkit-transform: rotate(-180deg);
+     -moz-transform: rotate(-180deg);
+     -ms-transform: rotate(-180deg);
+     -o-transform: rotate(-180deg);
+}
+
+/* .cover {
+    height: 160px;
+    width: 120px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 14px;
+    background-color: lightgrey;
+    position: absolute;
+    left: 100px;
+} */
+
+.cover {
+    background: #B20000 url(https://www.clowerweb.com/cors/blackjack/card.png) center center no-repeat !important;
+    height: 182px;
+    width: 142px;
+    padding: 10px;
+    border: 12px solid white;
+    border-radius: 14px;
+    background-color: lightgrey;
+    box-sizing: border-box;
+    position: absolute;
+    box-shadow: 0 0 1px #000;
+}
+
+.deck {
+    right: 10%;
+    box-shadow: 5px 6px 13px 7px #000;
+}
+
+.clubs, .spades {
+    color: black;
+}
+
+.hearts, .diams {
+    color: red;
+}
+
+.hearts .suit::after {
+    content: '\2665';
+}
+
+.diams .suit::after {
+    content: '\2666';
+}
+
+.spades .suit::after {
+    content: '\2660';
+}
+
+.clubs .suit::after {
+    content: '\2663';
+}
+
+#dealer-table, #player-table {
+    height: 180px;
+    width: 500px;
+    padding: 10px;
+}
